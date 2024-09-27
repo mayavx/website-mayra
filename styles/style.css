@@ -1,0 +1,923 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+
+
+
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/*dark mode */
+	--color-blocks:#3a4044;
+	--color-background: #181d20;
+	--color-white: white; 
+	--color-yellow: #faaa05;
+	--color-black: black; 
+
+	/*light mode */
+
+
+
+	--header-fonts: "PT Sans Narrow", sans-serif;
+	--p-fonts: "PT Sans Narrow", sans-serif;
+	   
+}
+
+
+
+
+
+/****************/
+/* BEHEERS DE TECHNIEK */
+/****************/
+
+/* jouw code */
+
+*:focus {
+    outline: 3px solid var(--color-yellow);
+}
+
+
+button:not(disabled) {  
+	cursor:pointer;
+  } /*hiermee kan je van je cursor een wijzende vinger maken*/
+    
+
+body {
+	background-color:var(--color-background);
+	font-size: 100%;
+
+	margin: 0%;
+	padding: 0%;
+}
+
+::selection {
+	background-color: var(--color-yellow);
+	color: black;
+}
+
+/*de code voor de hamburger menu heb ik uit https://codepen.io/shooft/pen/VwJXNEg 
+
+
+
+
+
+
+
+
+/****************/
+/* CODE HEADER */
+/****************/
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+
+	margin: 0em 0 1em 1em;
+	padding-top: 2em;
+}
+
+header nav {
+	align-self: flex-start;
+	
+}
+
+header .logo {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+
+
+	width: 25px;
+}
+
+@media (min-width: 30em) {
+	header .logo {
+		width: 40px;
+	}
+}
+
+
+
+header a {
+	color:var(--color-white);
+	text-decoration:none;
+  }
+
+
+header button {
+	padding:.5em;
+	
+	display:flex;
+	align-items:center;
+	gap: 0.3em;
+	
+	background: none;
+	border:none;
+	
+	font-family: var(--p-fonts);
+	font-weight: 700;
+	font-size: 1.4em;
+	color:var(--color-white);
+  }
+
+
+
+
+
+
+
+
+
+
+  
+/*********************/
+/*NAVIGATIE*/
+/*********************/
+nav {
+	font-family: var(--p-fonts);
+	font-weight: 700;
+	font-size: 1.5em;
+	
+	background-color:var(--color-background);
+	
+	position: fixed;
+	z-index: 1;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	
+	overflow-y: auto;
+    overflow-x: hidden;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-in-out;
+	
+/* extraatje gradient toevoegen */
+  }
+
+  @media (min-width: 45em) {
+	nav {
+		display:grid;
+		grid-template-columns: 0.1fr 1fr 1fr;
+		
+		align-items: start;
+	}
+  }
+
+
+  /* als menu open is */
+  .toonMenu {
+	transform: translateX(0%);
+	
+  }
+  
+  /*******************/
+  /* LINKJES */
+  /*******************/
+  nav ul { 
+	margin:0; 
+	padding:1em;
+
+	list-style:none;
+  }
+  
+
+  /************************/
+  /* LINKJES IN DE NAV */
+  /************************/
+  nav a {
+	display: flex;
+	justify-content: center;
+
+	border:solid 3px var(--color-blocks);
+	border-radius: 3em;
+
+	margin: 1em 4em 1em 4em;
+	padding: 10px 10px;
+
+	font-size: 0.7em;
+  }
+
+nav a:hover {
+	background-color:var(--color-yellow);
+	border:solid 3px var(--color-yellow);
+	color: var(--color-black);
+
+	transition: 0.7s;
+}
+
+@media (min-width: 40em) {
+	nav a {
+		font-size: 0.7em;
+	}
+}
+@media (min-width: 60em) {
+	nav a {
+		font-size: 1em;
+	}
+}
+ 
+
+
+
+
+
+
+
+/*********************/
+/*HEADERS*/		
+/*********************/
+h1{
+	font-family: var(--header-fonts);
+	text-transform: uppercase;
+	color: var(--color-white);
+	font-weight: bolder;
+	font-size: 3em;
+	line-height: 1em;
+
+	padding-left: 1em;
+	margin-top: 2em;
+}
+
+@media (min-width: 40em) {
+    h1 {
+		width: 6em;
+        font-size: 3.5em;
+		padding-left: 2.5em;
+    }
+}
+
+@media (min-width: 60em) {
+	h1 {
+		font-size: 8em;
+		padding: 5rem;
+		margin: 0;
+	}
+} 
+/* Linkje naar bovenstaande code: https://www.strato.nl/hosting/typografie-in-responsive-webdesign/#:~:text=Als%20je%20%40media%20combineert%20met,het%20lettertype%20van%20grootte%20verandert. */
+
+h2 {
+	font-family: var(--header-fonts);
+	text-transform: uppercase;
+	color: var(--color-yellow);
+	font-size: 2em;
+
+}
+
+h2:focus {
+	background-color: #faaa05;
+}
+
+@media screen and (min-width: 40em) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 60em) {
+	h2 {
+		font-size: 4rem;
+	}
+}
+
+section:nth-of-type(6) h2 {
+	max-width: 50%;
+	text-align: center;
+
+	line-height: 1em;
+	font-size: 3.3em;
+	color: var(--color-white);
+}
+
+section:nth-of-type(6) h2 {
+	max-width: 70%;
+
+	line-height: 1em;
+	font-size: 4em;
+	color: var(--color-white);
+}
+@media (min-width: 40em) {
+	section:nth-of-type(6) h2 {
+		font-size: 7em;
+	}
+}
+
+h3 {
+	font-family: var(--header-fonts);
+	color: var(--color-white);
+	font-size: 1.7em;
+	text-transform: uppercase;
+
+	padding-left: 1.6em;
+}
+
+@media (min-width: 40em) {
+	section:nth-of-type(3) h3,
+	section:nth-of-type(4) h3,
+	section:nth-of-type(5) h3 {
+		font-size: 3em;
+		padding-left: 1.2em;
+	}
+}
+
+
+
+
+
+
+/*********************/
+/*PARAGRAFEN*/
+/*********************/
+p {
+	font-family: var(--p-fonts);
+	color: var(--color-white);
+	font-weight: lighter;
+	font-size: 1.25em;
+	line-height: 1.4em;
+
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+	max-width: 23em;
+}
+
+section:first-of-type p {
+	font-family: var(--p-fonts);
+	font-weight: 300;
+	font-size: 1.3em;
+	padding: 1em 0 2em 1em;
+}
+
+@media (max-width: 390px) {
+	section:first-of-type p {
+		margin: 0;
+	}
+}
+
+@media (min-width: 40em) {
+	section:first-of-type p {
+		font-size: 1.7rem;
+		width: 30em;
+		padding-left: 3em;
+	}
+}
+
+section:nth-of-type(2) p {
+	font-family: var(--p-fonts);
+	font-weight: 700;
+	font-size: 1.3em;
+	text-align: center;
+
+	margin-inline: auto;
+}
+
+@media (min-width: 40em) {
+    section:nth-of-type(2) p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 60em) {
+	section:nth-of-type(2) p {
+		font-size: 1.7rem;
+	}
+}
+
+
+section:nth-of-type(3) p{
+	padding-left: 2.3em;
+}
+
+section:nth-of-type(4) p{
+	padding-left: 2.3em;
+}
+
+section:nth-of-type(5) p{
+	padding-left: 2.3em;
+}
+
+@media (min-width: 40em) {
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 60em) {
+	p {
+		font-size: 1.7rem;
+		padding-left: 2em;
+		max-width: 60%;
+	}
+}
+
+
+
+
+
+
+
+
+
+/*********************/
+/*SECTIONS*/
+/*********************/
+
+section:nth-of-type(2) div {
+	display: block;
+	margin: 2em auto 0 auto;
+}
+
+
+section:nth-of-type(2) {
+	display:grid;
+  	grid-template-columns: 1fr;
+	
+ 	text-align:center;
+/*bovenstaande code uit code pen https://codepen.io/mayr4/pen/OJeqRXK */
+	line-height: 1em;
+	width: 100%;
+	background-color: var(--color-blocks); 
+	
+}
+@media (min-width: 40em) {
+    section:nth-of-type(2) {
+        width: 100%;
+		padding-bottom: 3em;
+		margin-bottom: 2em;
+    }
+}
+
+
+
+section:nth-of-type(3),
+section:nth-of-type(4),
+section:nth-of-type(5) {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+@media (min-width: 40em) {
+	section:nth-of-type(3),
+	section:nth-of-type(4),
+	section:nth-of-type(5) {
+		display:grid;
+		grid-template-columns: 2.3fr 2fr;
+		grid-gap: 1em;
+
+		margin-top: 6em;
+		
+	}
+}
+
+section:nth-of-type(6) {
+	background-color: var(--color-blocks);
+
+	padding: 2em 0 3em 0;
+	margin: 3em 0 3em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*********************/
+/*IMG*/
+/*********************/
+
+.lachendeman {
+	width: 100%;
+	height: auto;
+}
+
+
+@media (min-width: 40em) {
+	.lachendeman {
+		max-width: 100%;
+		max-height: auto;
+	}
+}
+
+@media (min-width: 40em) {
+	nav:first-of-type img {
+		grid-column: -2;
+	}
+}
+
+
+
+@media (min-width: 40em) {
+	header div {
+		position: relative;
+	}
+}
+
+.afbeeldingtekst {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+
+	color: white;
+	font-size: 1em;
+	text-align: center;
+
+}
+
+@media (min-width: 30em) {
+	.afbeeldingtekst {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 60em) {
+	.afbeeldingtekst {
+		font-size: 2em;
+	}
+}
+
+.afbeeldingcontainer button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+	margin-top: 5em;
+
+	background-color: var(--color-yellow);
+	color: black;
+	border-radius: 2em;
+	font-size: 0.5em;
+	padding: 0.4em 1em 0.4em 1em;
+}
+
+.afbeeldingcontainer button:hover {
+	background-color: var(--color-white);
+	color: var(--color-background);
+
+	transition: 0.5s;
+}
+
+@media (min-width: 30em) {
+	.afbeeldingcontainer button {
+		font-size: 0.7em;
+		
+	}
+}
+
+@media (min-width: 60em) {
+	.afbeeldingcontainer button {
+		font-size:1.3em;
+		margin-top: 5em;
+	}
+}
+
+/*tekst over afbeelding heen uit artikel: https://kinsta.com/nl/blog/css-styling-afbeeldingen/#:~:text=Om%20tekst%20bovenop%20een%20afbeelding,positionering%20en%20z%2Dindex%20gebruiken.&text=In%20de%20bovenstaande%20code%20dient,de%20afbeelding%20als%20de%20tekstoverlay.*/
+
+
+
+section:nth-of-type(3) img,
+section:nth-of-type(5) img {
+	margin-inline-start: 0em;
+}
+
+
+section:nth-of-type(4) img {
+	margin-inline-start: 3em;
+}
+
+@media (min-width: 20em) {
+	section:nth-of-type(4) img {
+		margin-inline-end: 3em;
+		margin-inline-start: 0em;
+	}
+}
+
+@media (max-width: 500px) {
+	section:nth-of-type(3) img,
+	section:nth-of-type(5) img {
+		margin-inline-start: 3em;
+		margin-inline-end: 0em;
+	}
+}
+
+
+@media (min-width: 40em) {
+	section:nth-of-type(3) img,
+	section:nth-of-type(5) img {
+		max-width: 100%; /* Beperk de breedte van de afbeeldingen tot 50% van hun container */
+        height: auto;
+	}
+}
+
+@media (min-width: 40em) {
+	section:nth-of-type(4) img {
+		max-width: 100%; /* Beperk de breedte van de afbeeldingen tot 50% van hun container */
+        height: auto;
+	}
+}
+
+section:nth-of-type(6) img {
+	width: 350px;
+	height: 200px;
+
+	padding-left: 2em;
+}
+@media (min-width: 40em) {
+	section:nth-of-type(6) img {
+		width: 650px;
+		height: 350px;
+		padding-left: 6em;
+	}
+}
+@media (min-width: 60em) {
+	section:nth-of-type(6) img {
+		width: 950px;
+		height: 550px;
+		padding-left: 6em;
+	}
+}
+
+
+
+
+
+
+
+
+/*********************/
+/*VIDEO'S*/
+/*********************/
+
+video {
+	width: 300px;
+	height: 200px;
+
+	display: block;
+	margin: 2em auto 0 auto;
+}
+
+@media (min-width: 35em) {
+    video {
+        width:600px;
+		height: 500px;
+    }
+}
+
+@media (min-width: 40em) {
+    video {
+        width:600px;
+		height: 500px;
+    }
+}
+
+@media (min-width: 70em) {
+    video {
+        width:1000px;
+		height: 600px;
+    }
+}
+
+
+
+
+
+
+
+
+/*********************/
+/*FOOTER*/
+/*********************/
+footer {
+    display: flex;
+    flex-direction: column; 
+    
+    text-align: center;    
+    padding: 2em;         
+}
+
+footer h2 {
+    margin-bottom: 1em; 
+	color: var(--color-white);
+	font-size: 3em;
+}
+
+footer button {
+    margin-bottom: 0.5em; 
+    padding: 10px 1em;
+	width: 100%;
+
+	font-family: var(--p-fonts);
+	font-weight: 300;
+	font-size: 1.3em;
+
+	background-color: var(--color-background);
+	border: solid 3px var(--color-blocks);
+	border-radius: 3em;
+	color: var(--color-white);
+	
+}
+
+footer button:hover {
+	border: solid 3px var(--color-white);
+	transition: 0.5s;
+}
+
+footer a {
+    margin: 0.2em; 
+	display: flex;
+	
+	font-family: var(--p-fonts);
+	font-weight: 300;
+	font-size: 1.3em;
+    text-decoration: none; 
+    color: var(--color-white);
+}
+
+footer a:hover {
+	text-decoration: underline;
+}
+
+footer div:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    justify-items: center;
+	margin-bottom: 6em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+	
+footer div:nth-of-type(2) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin-top: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* ONTDEKT DEFENSIE */
+/****************/
+
+
+/*********************/
+/*HEADER*/
+/*********************/
+
+.headerpaginatwee {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right:0;
+	top: 0;
+}
+
+
+
+/****************/
+/* IMG CONTAINER */
+/****************/
+.gridpaginacontainer {
+	position: relative; /* Hiermee wordt de container als referentie gebruikt voor absolute positionering */
+	width: 100%;
+	height: auto;
+  }
+
+
+.gridpaginacontainer img {
+	display: block;
+
+	width: 100%;
+	height: auto;
+}
+
+
+.gridpaginacontainer h2 {
+	position: absolute; /* Plaatst het h2-element bovenop de afbeelding */
+	bottom: 10px; /* 10px vanaf de onderkant van de container */
+	left: 40%; /* Zet de tekst in het midden van de container */
+	transform: translateX(-50%); /* Centreert de tekst horizontaal */
+
+	color: var(--color-white); /* Kleur van de tekst */
+	font-size: 1.2em; /* Tekstgrootte */
+  }
+
+
+
+@media (min-width: 35em) {
+	.gridpaginacontainer h2 {
+		font-size: 1.2em;
+	}
+}
+
+@media (min-width: 65em) {
+	.gridpaginacontainer h2 {
+		font-size: 1.6em;
+	}
+}
+
+
+.gridpagina {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+@media (min-width: 50em) {
+	.gridpagina {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr); /* 5 kolommen bij een breed scherm */
+	}
+}
+
+
+
+
+/*********************/
+/*ANIMATIE*/
+/*********************/
+
+button {
+	animation: wiggle 2s linear infinite;
+  }
+  
+  /* Keyframes */
+@keyframes schudden {
+	0%, 7% {
+	  transform: rotateZ(0);
+	}
+	15% {
+	  transform: rotateZ(-15deg);
+	}
+	20% {
+	  transform: rotateZ(10deg);
+	}
+	25% {
+	  transform: rotateZ(-10deg);
+	}
+	30% {
+	  transform: rotateZ(6deg);
+	}
+	35% {
+	  transform: rotateZ(-4deg);
+	}
+	40%, 100% {
+	  transform: rotateZ(0);
+	}
+  }
+
+.gridpaginacontainer img:hover {
+	animation: schudden 3s linear
+}
+
+/* animatie schudden effect: https://blog.hubspot.com/website/css-animation-examples */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************/
+/* BUTTONS */
+/****************/
