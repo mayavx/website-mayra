@@ -267,11 +267,9 @@ toch links center gaat staan
   <img src="readme-images/buttonslechtcontrast.png" width="200px" alt="Button officiele website slecht contrast">
   - Ik heb er nu een beter constrast van gemaakt als je over de button hovert
   <img src="readme-images/buttonverandert.png" width="200px" alt="De button die ik heb aangepast">
+  - De officiele website van defensie heeft geen light mode, misschien
+  leuk om dat te proberen toe te passen.
 
-
-
-
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 </details>
 
@@ -298,13 +296,24 @@ toch links center gaat staan
   | ...            | ...                | ...          | ...              |
 
 
+ ## Mijn vragen
+ - Mijn afbeelding container in mijn menu doet het nog steeds niet goed als hij op telefoon
+ grootte staat, hoe kan ik dit fixen?
+ - Mijn github werkt niet
+ - Hoe ga ik mijn classes in de header weghalen, hoe ga ik dee div in een div met nth-of-type selecteren
+ - Hoe lijn ik de stel je vraag hier tekst in de footer links uit?
+ - Is al mijn code goed ingesprongen?
+ - Buttons in linkjes veranderen footer
+
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Linkjes horen je te brengen naar een andere pagina en butttons zorgen ervoor dat er in dezelfde pagina waar je
+  in zit iets gebeurd.
+  - Zorg ervoor dat je github desktop gebruikt, want dat werkt beter
+  - Met de + kan je het eerste element dat na een bepaald element komt selecteren
+  - Alle code leek goed ingesprongen te zijn
 
 </details>
 
@@ -314,6 +323,17 @@ toch links center gaat staan
 ## Aanbevelingen 
 
 <details>
+
+- Voor de video die geen geluid bevat zou ik een vtt functie kunnen toevoegen die een soort ondertiteling
+biedt voor mensen die slechtziend/ blind zijn, zodat ze als nog kunnen weten wat er in de video gebeurd.
+- Om een fijne ervaring te bieden aan een gebruiker die in het licht of donker naar de website kijkt,
+is het ideaal als de website een licht en donker modus heeft.
+- Voor de mensen die een screenreader gebruiken en gelijk naar de belangrijkste informatie willen gaan, zou ik ene skip link kunnen toevoegen. 
+- Om altijd bij het menu te kunnen tijdens het scrollen zou ik de header fixed kunnen maken en 
+dan wanneer er gescrollt wordt, er een witte achtergrond aan toevoegen en het menu icoon zwart maken. 
+- Om de linkjes in de footer er mooier uit te laten zien kan bij bij een min breedte van 30em de border breedte van de linkjes
+niet zo breed laten lijken. 
+
 
 </details>
 
@@ -332,13 +352,25 @@ toch links center gaat staan
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images/ginggoedeen.png" width="375px" alt="ik heb geleerd hoe je
+  met media querys moet werken en ik ben blij dat het is gelukt
+  bij mijn plaatjes, want als het scherm groot is lijnen de plaatjes onder elkaar rechts uit en wanneer het scherm klein is lijnen ze onder de tekst uit.">
+   <img src="images/ginggoedtwee.png" width="375px" alt="Ik dacht eerst dat de grid pagina lastig was om te maken, maar ik snapte al snel hoe ik de plaatjes op deze manier kon weergeven.">
+  <img src="readme-images/ginggoeddrie.png" width="375px" alt="Het verdelen van de informatie op de pagina ging ook goed.">
+   <img src="readme-images/ginggoedvier.png" width="375px" alt="ik heb bijna alle linkjes en buttons met een hover effect voorzien.">
+   <img src="readme-images/ginggoedvijf.png" width="375px" alt="Het toevoegen van een light mode was makkelijker dan verwacht.">
+
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/gingsleecht.png" width="375px" alt="het positioneren van de tekst en de button ging niet zo goed en is ook niet mooi gelukt. 
+  Het is niet echt mooi responsive.">
+  <img src="readme-images/gingslechttwee.png" width="375px" alt="De linkjes nemen de hele pagina in (bij een groot scherm) terwijl dat eigenlijk niet moet. Het is me niet gelukt om dit mooi te kunnen stylen.">
+  <img src="readme-images/gingslechtdrie.png" width="375px" alt="Ik had best veel moeite met het maken van de navigatie en daarin weer de content op de juiste plek te zetten.">
+
+
 </details>
 
 

@@ -21,6 +21,10 @@
 	--color-black: black; 
 
 	/*light mode */
+	--color-background-light: rgb(198, 198, 198);
+	--color-text-light: #181d20;
+	--color-blocks-light: #3a4044;
+
 
 
 
@@ -57,6 +61,12 @@ body {
 	padding: 0%;
 }
 
+@media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--color-background-light);
+	}
+}
+
 ::selection {
 	background-color: var(--color-yellow);
 	color: black;
@@ -89,7 +99,7 @@ header nav {
 	
 }
 
-header .logo {
+header nav + img { /*dit selecteert het element dat direct na het nav element komt*/
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -99,7 +109,7 @@ header .logo {
 }
 
 @media (min-width: 30em) {
-	header .logo {
+	header nav + img {
 		width: 40px;
 	}
 }
@@ -110,6 +120,7 @@ header a {
 	color:var(--color-white);
 	text-decoration:none;
   }
+
 
 
 header button {
@@ -127,6 +138,58 @@ header button {
 	font-size: 1.4em;
 	color:var(--color-white);
   }
+
+header nav div {
+	position: relative;
+}
+
+header nav div button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+
+	background-color: var(--color-yellow);
+	color: black;
+	border-radius: 2em;
+	font-size: 1em;
+	padding: 0.4em 1em 0.4em 1em;
+}
+
+header nav div button:hover {
+	background-color: var(--color-white);
+	color: var(--color-background);
+
+	transition: 0.5s;
+}
+
+
+
+
+@media (min-width: 30em) {
+	header nav div button {
+		font-size: 0.7em;
+		
+	}
+}
+
+@media (min-width: 45em) {
+	header nav div button {
+		font-size: 0.7em;
+		margin-top: 4em;
+		
+	}
+}
+
+@media (min-width: 60em) {
+	header nav div button {
+		font-size:1.3em;
+		margin-top: 4em;
+	}
+}
+
+/*tekst over afbeelding heen uit artikel: https://kinsta.com/nl/blog/css-styling-afbeeldingen/#:~:text=Om%20tekst%20bovenop%20een%20afbeelding,positionering%20en%20z%2Dindex%20gebruiken.&text=In%20de%20bovenstaande%20code%20dient,de%20afbeelding%20als%20de%20tekstoverlay.*/
 
 
 
@@ -150,18 +213,21 @@ nav {
 	
 	position: fixed;
 	z-index: 1;
-	left:0;
-	right:0;
 	top:0;
 	bottom:0;
+	left: 0;
 	
 	overflow-y: auto;
     overflow-x: hidden;
 	transform: translateX(-100%);
 	transition: transform 0.3s ease-in-out;
-	
-/* extraatje gradient toevoegen */
   }
+
+@media (prefers-color-scheme: light) {
+	nav {
+		background-color: var(--color-background-light);
+	}
+}
 
   @media (min-width: 45em) {
 	nav {
@@ -176,7 +242,7 @@ nav {
   /* als menu open is */
   .toonMenu {
 	transform: translateX(0%);
-	
+
   }
   
   /*******************/
@@ -205,6 +271,12 @@ nav {
 
 	font-size: 0.7em;
   }
+
+@media (prefers-color-scheme: light) {
+	nav a {
+		color: var(--color-text-light);
+	}
+}
 
 nav a:hover {
 	background-color:var(--color-yellow);
@@ -235,6 +307,9 @@ nav a:hover {
 /*********************/
 /*HEADERS*/		
 /*********************/
+
+
+
 h1{
 	font-family: var(--header-fonts);
 	text-transform: uppercase;
@@ -245,6 +320,12 @@ h1{
 
 	padding-left: 1em;
 	margin-top: 2em;
+}
+
+@media (prefers-color-scheme: light) {
+	h1 {
+		color: var(--color-text-light);
+	}
 }
 
 @media (min-width: 40em) {
@@ -269,14 +350,19 @@ h2 {
 	text-transform: uppercase;
 	color: var(--color-yellow);
 	font-size: 2em;
-
 }
 
 h2:focus {
 	background-color: #faaa05;
 }
 
-@media screen and (min-width: 40em) {
+@media (prefers-color-scheme: light) {
+	h2 {
+		color: var(--color-text-light);
+	}
+}
+
+@media (min-width: 40em) {
     h2 {
         font-size: 2rem;
     }
@@ -319,6 +405,13 @@ h3 {
 	padding-left: 1.6em;
 }
 
+
+@media (prefers-color-scheme: light) {
+	h3 {
+		color: var(--color-text-light);
+	}
+}
+
 @media (min-width: 40em) {
 	section:nth-of-type(3) h3,
 	section:nth-of-type(4) h3,
@@ -336,6 +429,33 @@ h3 {
 /*********************/
 /*PARAGRAFEN*/
 /*********************/
+
+header nav div p {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+
+	color: white;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+@media (min-width: 30em) {
+	header nav div p {
+		font-size: 1.5em;
+	}
+}
+
+@media (min-width: 60em) {
+	header nav div p {
+		font-size: 2em;
+	}
+}
+
 p {
 	font-family: var(--p-fonts);
 	color: var(--color-white);
@@ -346,6 +466,12 @@ p {
 	padding-left: 0.8em;
 	padding-right: 0.8em;
 	max-width: 23em;
+}
+
+@media (prefers-color-scheme: light) {
+	p {
+		color: var(--color-text-light);
+	}
 }
 
 section:first-of-type p {
@@ -446,6 +572,15 @@ section:nth-of-type(2) {
 	background-color: var(--color-blocks); 
 	
 }
+
+@media (prefers-color-scheme: light) {
+	section:nth-of-type(2) {
+		background-color: rgb(226, 226, 226);
+		color: var(--color-text-light);
+	}
+}
+
+
 @media (min-width: 40em) {
     section:nth-of-type(2) {
         width: 100%;
@@ -499,14 +634,14 @@ section:nth-of-type(6) {
 /*IMG*/
 /*********************/
 
-.lachendeman {
+header nav div img  {
 	width: 100%;
 	height: auto;
 }
 
 
 @media (min-width: 40em) {
-	.lachendeman {
+	header nav div img {
 		max-width: 100%;
 		max-height: auto;
 	}
@@ -525,70 +660,6 @@ section:nth-of-type(6) {
 		position: relative;
 	}
 }
-
-.afbeeldingtekst {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-
-	color: white;
-	font-size: 1em;
-	text-align: center;
-
-}
-
-@media (min-width: 30em) {
-	.afbeeldingtekst {
-		font-size: 1.5em;
-	}
-}
-
-@media (min-width: 60em) {
-	.afbeeldingtekst {
-		font-size: 2em;
-	}
-}
-
-.afbeeldingcontainer button {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-	margin-top: 5em;
-
-	background-color: var(--color-yellow);
-	color: black;
-	border-radius: 2em;
-	font-size: 0.5em;
-	padding: 0.4em 1em 0.4em 1em;
-}
-
-.afbeeldingcontainer button:hover {
-	background-color: var(--color-white);
-	color: var(--color-background);
-
-	transition: 0.5s;
-}
-
-@media (min-width: 30em) {
-	.afbeeldingcontainer button {
-		font-size: 0.7em;
-		
-	}
-}
-
-@media (min-width: 60em) {
-	.afbeeldingcontainer button {
-		font-size:1.3em;
-		margin-top: 5em;
-	}
-}
-
-/*tekst over afbeelding heen uit artikel: https://kinsta.com/nl/blog/css-styling-afbeeldingen/#:~:text=Om%20tekst%20bovenop%20een%20afbeelding,positionering%20en%20z%2Dindex%20gebruiken.&text=In%20de%20bovenstaande%20code%20dient,de%20afbeelding%20als%20de%20tekstoverlay.*/
-
 
 
 section:nth-of-type(3) img,
@@ -703,12 +774,10 @@ video {
 /*********************/
 /*FOOTER*/
 /*********************/
-footer {
-    display: flex;
-    flex-direction: column; 
-    
+
+footer {  
     text-align: center;    
-    padding: 2em;         
+    padding: 2em;        
 }
 
 footer h2 {
@@ -717,8 +786,86 @@ footer h2 {
 	font-size: 3em;
 }
 
+@media (prefers-color-scheme: light) {
+	footer h2 {
+		color: var(--color-text-light);
+	}
+}
+
+
+footer div:first-of-type {
+	display: grid;
+	grid-template-columns: 1fr 1fr; 
+	gap: 20px; /* Ruimte tussen de grid-items */
+    justify-items: center;
+    width: 100%; /* De container neemt de volledige breedte in */
+    max-width: 100%; /* De container past zich aan de schermgrootte aan */
+    padding: 0 10px; /* Padding om te voorkomen dat items tegen de rand van het scherm komen */
+    box-sizing: border-box;
+}
+
+footer div:first-of-type a {
+	margin-bottom: .5em; 
+    padding: 10px 1em;
+	width: 100%;
+
+	font-family: var(--p-fonts);
+	font-weight: 300;
+	font-size: 1.3em;
+	text-decoration: none;
+
+	background-color: var(--color-background);
+	border: solid 3px var(--color-blocks);
+	border-radius: 3em;
+	color: var(--color-white);
+	text-align: center;
+
+	box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+	footer div:first-of-type a {
+		background-color: var(--color-background-light);
+		color: var(--color-text-light);
+	}
+}
+
+footer div:first-of-type a:hover {
+	border: solid 3px var(--color-white);
+	transition: 0.5s;
+}
+
+footer div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+    gap: 10px; /* Voeg ruimte toe tussen de links */
+	margin-top: 2em;
+}
+
+footer div:nth-of-type(2) a {
+	margin: 0.2em; 
+	
+	font-family: var(--p-fonts);
+	font-weight: 300;
+	font-size: 1em;
+    text-decoration: none; 
+    color: var(--color-white);
+}
+
+footer div:nth-of-type(2) a:hover {
+	text-decoration: underline;
+}
+
+@media (prefers-color-scheme: light) {	
+footer div:nth-of-type(2) a {
+		color: var(--color-text-light);
+	}
+}
+
+
 footer button {
-    margin-bottom: 0.5em; 
+	margin-top: 3em; 
     padding: 10px 1em;
 	width: 100%;
 
@@ -730,7 +877,13 @@ footer button {
 	border: solid 3px var(--color-blocks);
 	border-radius: 3em;
 	color: var(--color-white);
-	
+}
+
+@media (prefers-color-scheme: light) {
+	footer button {
+		background-color: var(--color-background-light);
+		color: var(--color-text-light);
+	}
 }
 
 footer button:hover {
@@ -738,42 +891,8 @@ footer button:hover {
 	transition: 0.5s;
 }
 
-footer a {
-    margin: 0.2em; 
-	display: flex;
-	
-	font-family: var(--p-fonts);
-	font-weight: 300;
-	font-size: 1.3em;
-    text-decoration: none; 
-    color: var(--color-white);
-}
 
-footer a:hover {
-	text-decoration: underline;
-}
 
-footer div:first-of-type {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px; 
-    justify-items: center;
-	margin-bottom: 6em;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-	
-footer div:nth-of-type(2) {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-	margin-top: 2em;
-}
 
 
 
@@ -787,7 +906,7 @@ footer div:nth-of-type(2) {
 
 
 /****************/
-/* ONTDEKT DEFENSIE */
+/* ONTDEKT DEFENSIE PAGINA */
 /****************/
 
 
@@ -867,7 +986,7 @@ footer div:nth-of-type(2) {
 /*ANIMATIE*/
 /*********************/
 
-button {
+.gridpaginacontainer img {
 	animation: wiggle 2s linear infinite;
   }
   
@@ -899,6 +1018,9 @@ button {
 .gridpaginacontainer img:hover {
 	animation: schudden 3s linear
 }
+
+
+
 
 /* animatie schudden effect: https://blog.hubspot.com/website/css-animation-examples */
 
