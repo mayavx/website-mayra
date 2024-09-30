@@ -347,28 +347,52 @@ niet zo breed laten lijken.
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  - Het menu vind ik goed gelukt. Met hulp van de oefenining op code pen
+  heb ik voor het eerst een menu kunnen maken die in de pagina slide.
+  - Het maken van de binnenkant van het menu ging wel wat lastiger, omdat ik heel vaak vast liep. Ik kreeg hier gelukkig veel hulp bij bij de voortgangsgesprekken.
+  - Achteraf vond ik het best leuk om een website na te maken, want dit geeft mij een goed gevoel dat coderen niet super moeilijk hoeft te zijn om een goede website te maken.
+  - Ik had wel best vaak moeite om de juiste elementen te selecteren met nth of type, want soms was het lastig om te weten in welke volgorde je de elementen moest zetten om het juiste te selecteren.
+  
+
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="images/ginggoedeen.png" width="375px" alt="ik heb geleerd hoe je
-  met media querys moet werken en ik ben blij dat het is gelukt
-  bij mijn plaatjes, want als het scherm groot is lijnen de plaatjes onder elkaar rechts uit en wanneer het scherm klein is lijnen ze onder de tekst uit.">
-   <img src="images/ginggoedtwee.png" width="375px" alt="Ik dacht eerst dat de grid pagina lastig was om te maken, maar ik snapte al snel hoe ik de plaatjes op deze manier kon weergeven.">
-  <img src="readme-images/ginggoeddrie.png" width="375px" alt="Het verdelen van de informatie op de pagina ging ook goed.">
-   <img src="readme-images/ginggoedvier.png" width="375px" alt="ik heb bijna alle linkjes en buttons met een hover effect voorzien.">
-   <img src="readme-images/ginggoedvijf.png" width="375px" alt="Het toevoegen van een light mode was makkelijker dan verwacht.">
+  <img src="images/ginggoedeen.png" width="375px" alt="">
+  - Ik heb geleerd hoe je met media querys moet werken en ik ben blij dat het is gelukt bij mijn plaatjes, want als het scherm groot is lijnen de plaatjes onder elkaar rechts uit en wanneer het scherm klein is lijnen ze onder de tekst uit.
+
+   <img src="images/ginggoedtwee.png" width="375px" alt="">
+  - Ik dacht eerst dat de grid pagina lastig was om te maken, maar ik snapte al snel hoe ik de plaatjes op deze manier kon weergeven.
+
+  <img src="readme-images/ginggoeddrie.png" width="375px" alt="">
+  - Het verdelen van de informatie op de pagina ging ook goed.
+
+  <img src="readme-images/ginggoedvier.png" width="375px" alt="">
+  - Ik heb bijna alle linkjes en buttons met een hover effect voorzien.
+
+   <img src="readme-images/ginggoedvijf.png" width="375px" alt="">
+   - Het toevoegen van een light mode was makkelijker dan verwacht.
+
+   <img src="readme-images/scrollennav.png" width="375px" alt="">
+   - Dit stukje code heeft ervoor gezorgd dat ik niet kon scrollen in mijn nav
+   ik ben blij dat ik hierachter ben gekomen, want niemand wist waaraan het lag.
 
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/gingsleecht.png" width="375px" alt="het positioneren van de tekst en de button ging niet zo goed en is ook niet mooi gelukt. 
-  Het is niet echt mooi responsive.">
-  <img src="readme-images/gingslechttwee.png" width="375px" alt="De linkjes nemen de hele pagina in (bij een groot scherm) terwijl dat eigenlijk niet moet. Het is me niet gelukt om dit mooi te kunnen stylen.">
-  <img src="readme-images/gingslechtdrie.png" width="375px" alt="Ik had best veel moeite met het maken van de navigatie en daarin weer de content op de juiste plek te zetten.">
+  <img src="readme-images/gingsleecht.png" width="375px" alt="">
+  - het positioneren van de tekst en de button ging niet zo goed en is ook niet mooi gelukt. 
+  Het is niet echt mooi responsive.
+  
+  <img src="readme-images/gingslechttwee.png" width="375px" alt="">
+  - De linkjes nemen de hele pagina in (bij een groot scherm) terwijl dat eigenlijk niet moet. Het is me niet gelukt om dit mooi te kunnen stylen.
+
+  <img src="readme-images/gingslechtdrie.png" width="375px" alt="">
+  - Ik had best veel moeite met het maken van de navigatie en daarin weer de content op de juiste plek te zetten. Het zou ook beter zijn dat je de tekst ziet in het plaatje wanneer het klein scherm is zodatje weet dat je moet scrollen.
 
 
 </details>
@@ -392,6 +416,11 @@ niet zo breed laten lijken.
   4. tekst over afbeelding positioneren - https://kinsta.com/nl/blog/css-styling-afbeeldingen/#:~:text=Om%20tekst%20bovenop%20een%20afbeelding,positionering%20en%20z%2Dindex%20gebruiken.&text=In%20de%20bovenstaande%20code%20dient,de%20afbeelding%20als%20de%20tekstoverlay
   5. animation schud effect - https://blog.hubspot.com/website/css-animation-examples
   6. video werkend maken -  https://krasenslavov.com/video-player-with-custom-controls-adding-a-play-button-overlay/
+  7. border box - https://www.freecodecamp.org/news/what-is-box-sizing-border-box-css/
+  8. position absolute - https://www.handleidinghtml.nl/css/css-elementen/css-elementen09.html#:~:text=Met%20de%20eigenschap%20position%3A%20absolute,(bijvoorbeeld%20absolute%20of%20relative).
+  9. inline elementen - https://www.w3schools.com/html/html_blocks.asp
+
+
 
 
 
