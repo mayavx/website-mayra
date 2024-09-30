@@ -138,7 +138,7 @@ Het is ook irritant als je een 'ben je een robot' formulier moet oplossen.
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -182,7 +182,7 @@ Het is ook irritant als je een 'ben je een robot' formulier moet oplossen.
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -232,7 +232,7 @@ toch links center gaat staan
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
 <img src="readme-images/wcageen.png" width="200px" alt="foto van WCAG richtlijnen pagina 1">
@@ -279,7 +279,7 @@ toch links center gaat staan
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -322,7 +322,7 @@ toch links center gaat staan
 
 ## Aanbevelingen 
 
-<details>
+<details open>
 
 - Voor de video die geen geluid bevat zou ik een vtt functie kunnen toevoegen die een soort ondertiteling
 biedt voor mensen die slechtziend/ blind zijn, zodat ze als nog kunnen weten wat er in de video gebeurd.
@@ -342,11 +342,11 @@ niet zo breed laten lijken.
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  
   - Het menu vind ik goed gelukt. Met hulp van de oefenining op code pen
   heb ik voor het eerst een menu kunnen maken die in de pagina slide.
   - Het maken van de binnenkant van het menu ging wel wat lastiger, omdat ik heel vaak vast liep. Ik kreeg hier gelukkig veel hulp bij bij de voortgangsgesprekken.
@@ -360,22 +360,22 @@ niet zo breed laten lijken.
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="images/ginggoedeen.png" width="375px" alt="">
+  <img src="images/ginggoedeen.png" width="100px" alt="">
   - Ik heb geleerd hoe je met media querys moet werken en ik ben blij dat het is gelukt bij mijn plaatjes, want als het scherm groot is lijnen de plaatjes onder elkaar rechts uit en wanneer het scherm klein is lijnen ze onder de tekst uit.
 
-   <img src="images/ginggoedtwee.png" width="375px" alt="">
+   <img src="images/ginggoedtwee.png" width="100px" alt="">
   - Ik dacht eerst dat de grid pagina lastig was om te maken, maar ik snapte al snel hoe ik de plaatjes op deze manier kon weergeven.
 
-  <img src="readme-images/ginggoeddrie.png" width="375px" alt="">
+  <img src="readme-images/ginggoeddrie.png" width="100px" alt="">
   - Het verdelen van de informatie op de pagina ging ook goed.
 
-  <img src="readme-images/ginggoedvier.png" width="375px" alt="">
+  <img src="readme-images/ginggoedvier.png" width="100px" alt="">
   - Ik heb bijna alle linkjes en buttons met een hover effect voorzien.
 
-   <img src="readme-images/ginggoedvijf.png" width="375px" alt="">
+   <img src="readme-images/ginggoedvijf.png" width="100px" alt="">
    - Het toevoegen van een light mode was makkelijker dan verwacht.
 
-   <img src="readme-images/scrollennav.png" width="375px" alt="">
+   <img src="readme-images/scrollennav.png" width="100px" alt="">
    - Dit stukje code heeft ervoor gezorgd dat ik niet kon scrollen in mijn nav
    ik ben blij dat ik hierachter ben gekomen, want niemand wist waaraan het lag.
 
@@ -384,14 +384,14 @@ niet zo breed laten lijken.
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/gingsleecht.png" width="375px" alt="">
+  <img src="readme-images/gingsleecht.png" width="100px" alt="">
   - het positioneren van de tekst en de button ging niet zo goed en is ook niet mooi gelukt. 
   Het is niet echt mooi responsive.
   
-  <img src="readme-images/gingslechttwee.png" width="375px" alt="">
+  <img src="readme-images/gingslechttwee.png" width="100px" alt="">
   - De linkjes nemen de hele pagina in (bij een groot scherm) terwijl dat eigenlijk niet moet. Het is me niet gelukt om dit mooi te kunnen stylen.
 
-  <img src="readme-images/gingslechtdrie.png" width="375px" alt="">
+  <img src="readme-images/gingslechtdrie.png" width="100px" alt="">
   - Ik had best veel moeite met het maken van de navigatie en daarin weer de content op de juiste plek te zetten. Het zou ook beter zijn dat je de tekst ziet in het plaatje wanneer het klein scherm is zodatje weet dat je moet scrollen.
 
 
