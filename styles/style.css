@@ -39,16 +39,14 @@
 /* BEHEERS DE TECHNIEK */
 /****************/
 
-/* jouw code */
-
 *:focus {
     outline: 3px solid var(--color-yellow);
-}  /* hiermee kan je de focus state over de hele pagina mee vormgeven */
+}  
 
 
 button:not(disabled) {  
 	cursor:pointer;
-  } /*hiermee kan je van je cursor een wijzende vinger maken*/
+  } 
     
 
 body {
@@ -67,7 +65,7 @@ body {
 ::selection {
 	background-color: var(--color-yellow);
 	color: black;
-} /* wanneer je tekst selecteert */
+} 
 
 /*de code voor de hamburger menu heb ik uit https://codepen.io/shooft/pen/VwJXNEg 
 
@@ -87,13 +85,10 @@ header {
 	padding-top: 2em;
 }
 
-header nav + img { /*dit selecteert het element dat direct na het nav element komt*/
+header nav + img {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%); 
-	/*Dit stukje code centreert een element horizontaal 
-	in zijn container door het naar het midden te verplaatsen 
-	en daarna te corrigeren met een verschuiving.*/
 
 	width: 25px;
 }
@@ -110,7 +105,7 @@ header a {
   }
 
 
-/* meenu buton*/
+/* menu buton*/
 
 header button { 
 	padding: .5em;
@@ -129,17 +124,15 @@ header button {
   }
 
 header nav div {
-	position: relative; /*dit zorgt ervoor dat alle elementen binnen deze container
-	'relatives' van elkaar worden zodat het niet in een andere container komt
-	te staan*/
+	position: relative; 
 }
 
 header nav div button {
-	position: absolute; /*dit element neemt geen ruimte meer in*/
+	position: absolute; 
 	/*https://www.handleidinghtml.nl/css/css-elementen/css-elementen09.html#:~:text=Met%20de%20eigenschap%20position%3A%20absolute,(bijvoorbeeld%20absolute%20of%20relative).*/
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); /* hiermee kan je een element excact centreren*/
+	transform: translate(-50%, -50%);
 	z-index: 1;
 
 	background-color: var(--color-yellow);
@@ -203,17 +196,16 @@ nav {
 	
 	background-color:var(--color-background);
 	
-	position: fixed; /*dit laat zien hoe een element zich altijd laat zien met de codee
-	hieronder geef ik de container dus altijd 0 ruimte*/
-	z-index: 1; /*de content komt bovenaan de laag te staan*/
+	position: fixed;
+	z-index: 1; 
 	top:0;
 	bottom:0;
 	left: 0;
 	
-	overflow-y: auto; /*scrollen op y as*/
-    overflow-x: hidden; /*scrollen op x as kan niet*/
-	transform: translateX(-100%); /*de navigatie verdwijnt -100% uit het scherm*/
-	transition: transform 0.3s ease-in-out; /*geeft aan wat er met de transformatie gebeurd*/
+	overflow-y: auto; 
+    overflow-x: hidden; 
+	transform: translateX(-100%); 
+	transition: transform 0.3s ease-in-out;
   }
 
 @media (prefers-color-scheme: light) {
@@ -225,16 +217,15 @@ nav {
   @media (min-width: 45em) {
 	nav {
 		display:grid;
-		grid-template-columns: 0.1fr 1fr 1fr; /* 3 kolommen gemaakt*/
+		grid-template-columns: 0.1fr 1fr 1fr; 
 		
-		align-items: start; /*lijnt de elementen in het begin van de kolom uit*/
+		align-items: start; 
 	}
   }
 
 
-  /* als menu open is */
   .toonMenu {
-	transform: translateX(0%); /*navigatie komt in beeld en blijft staan*/
+	transform: translateX(0%); 
 
   }
   
@@ -494,7 +485,7 @@ section:nth-of-type(2) p {
 	font-size: 1.3em;
 	text-align: center;
 
-	margin-inline: auto; /*centreert teekst binnen een blok element*/
+	margin-inline: auto; 
 }
 
 @media (min-width: 40em) {
@@ -583,8 +574,7 @@ section:nth-of-type(3),
 section:nth-of-type(4),
 section:nth-of-type(5) {
 	display: flex;
-	flex-direction: column; /*hiermee worden de elementen binnen de sections
-	onder elkaar gezet*/
+	flex-direction: column; 
 }
 
 
@@ -632,7 +622,7 @@ header nav div img  {
 @media (min-width: 40em) {
 	header nav div img {
 		max-width: 100%;
-		max-height: auto;
+		height: auto;
 	}
 }
 
@@ -666,14 +656,14 @@ section:nth-of-type(4) img {
 @media (min-width: 40em) {
 	section:nth-of-type(3) img,
 	section:nth-of-type(5) img {
-		max-width: 100%; /* Beperk de breedte van de afbeeldingen tot 50% van hun container */
+		max-width: 100%; 
         height: auto;
 	}
 }
 
 @media (min-width: 40em) {
 	section:nth-of-type(4) img {
-		max-width: 100%; /* Beperk de breedte van de afbeeldingen tot 50% van hun container */
+		max-width: 100%; 
         height: auto;
 	}
 }
@@ -714,7 +704,7 @@ video {
 	width: 300px;
 	height: 200px;
 
-	display: block; /*centreert het*/
+	display: block; 
 	margin: 2em auto 0 auto;
 }
 
@@ -771,14 +761,12 @@ footer h2 {
 footer div:first-of-type {
 	display: grid;
 	grid-template-columns: 1fr 1fr; 
-	gap: 20px; /* Ruimte tussen de grid-items */
+	gap: 20px; 
     justify-items: center;
-    width: 100%; /* De container neemt de volledige breedte in */
-    max-width: 100%; /* De container past zich aan de schermgrootte aan */
-    padding: 0 10px; /* Padding om te voorkomen dat items tegen de rand van het scherm komen */
-    box-sizing: border-box; /*When you set the box-sizing property 
-	to border-box, the width and height of the element are calculated 
-	based on the content, padding and border of the element.*/
+    width: 100%;
+    max-width: 100%; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
 	/*https://www.freecodecamp.org/news/what-is-box-sizing-border-box-css/*/
 }
 
@@ -816,8 +804,8 @@ footer div:first-of-type a:hover {
 footer div:nth-of-type(2) {
     display: flex;
     justify-content: center;
-	flex-wrap: wrap; /*scherm kleiner content onder elkaar*/
-    gap: 10px; /* Voegt ruimte toe tussen de links */
+	flex-wrap: wrap; 
+    gap: 10px; 
 	margin-top: 2em;
 }
 
@@ -893,7 +881,7 @@ footer button:hover {
 /*********************/
 
 .headerpaginatwee {
-	position: fixed; /*header blijft plakken*/
+	position: fixed; 
 	z-index: 1;
 	left: 0;
 	right:0;
@@ -906,7 +894,7 @@ footer button:hover {
 /* IMG CONTAINER */
 /****************/
 .gridpaginacontainer {
-	position: relative; /* Hiermee wordt de container als referentie gebruikt voor absolute positionering */
+	position: relative; 
 	width: 100%;
 	height: auto;
   }
@@ -921,13 +909,13 @@ footer button:hover {
 
 
 .gridpaginacontainer h2 {
-	position: absolute; /* Plaatst het h2-element bovenop de afbeelding */
-	bottom: 10px; /* 10px vanaf de onderkant van de container */
-	left: 40%; /* Zet de tekst in het midden van de container */
-	transform: translateX(-50%); /* Centreert de tekst horizontaal */
+	position: absolute; 
+	bottom: 10px; 
+	left: 40%; 
+	transform: translateX(-50%); 
 
-	color: var(--color-white); /* Kleur van de tekst */
-	font-size: 1.2em; /* Tekstgrootte */
+	color: var(--color-white); 
+	font-size: 1.2em; 
   }
 
 
@@ -953,7 +941,7 @@ footer button:hover {
 @media (min-width: 50em) {
 	.gridpagina {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr); /* 5 kolommen bij een breed scherm */
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
 

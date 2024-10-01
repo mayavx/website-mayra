@@ -346,7 +346,7 @@ niet zo breed laten lijken.
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
   - Het menu vind ik goed gelukt. Met hulp van de oefenining op code pen
   heb ik voor het eerst een menu kunnen maken die in de pagina slide.
   - Het maken van de binnenkant van het menu ging wel wat lastiger, omdat ik heel vaak vast liep. Ik kreeg hier gelukkig veel hulp bij bij de voortgangsgesprekken.
